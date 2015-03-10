@@ -5,8 +5,8 @@ from django.test import TestCase
 
 from mock import Mock
 
-from .middleware import HideHerokuappFromRobotsMiddleware
-from .views import herokuapp_robots_view
+from hide_herokuapp.middleware import HideHerokuappFromRobotsMiddleware
+from hide_herokuapp.views import herokuapp_robots_view
 
 
 class TestHideHerokuappFromRobotsMiddleware(TestCase):

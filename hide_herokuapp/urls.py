@@ -4,7 +4,9 @@ try:
 except ImportError:
     from django.conf.urls.defaults import patterns, url
 
+from hide_herokuapp.views import herokuapp_robots_view
 
-urlpatterns = patterns('hide_herokuapp.views',
+
+urlpatterns = patterns('',
     url(r'^$', herokuapp_robots_view),
 )
