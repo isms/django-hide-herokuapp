@@ -51,19 +51,20 @@ Quick start
 
 1. Add `'hide_herokuapp'` to your INSTALLED_APPS setting.
 
-2. Add the `HideHerokuappFromRobotsMiddleware` middleware to the top of your 
-   middlewares in `MIDDLEWARE_CLASSES` like this:
-
+2. Add the `HideHerokuappFromRobotsMiddleware` middleware to your `MIDDLEWARE_CLASSES`
+   like this:
    ```
    MIDDLEWARE_CLASSES = (
-       'django.contrib.sessions.middleware.SessionMiddleware',
-       'config.middleware.HideHerokuappFromRobotsMiddleware',
-       'django.middleware.common.CommonMiddleware',
        ...
+       'hide_herokuapp.middleware.HideHerokuappFromRobotsMiddleware',
    )
    ```
 
 3. Include the `hide_herokuapp` URLconf in your project `urls.py` like this:
    ```
-   (r'^robots\.txt$', include('hide_herokuapp.urls')),
+   urlpatterns = patterns('',
+       ...
+       url(r'^robots\.txt$', include('hide_herokuapp.urls')),
+       ...
+   )
    ```
