@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-from django import http
-
-
 class HideHerokuappFromRobotsMiddleware(object):
     def process_response(self, request, response):
         """
