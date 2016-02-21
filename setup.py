@@ -18,7 +18,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-hide-herokuapp',
-    version='0.2',
+    version='0.3',
     packages=['hide_herokuapp'],
     include_package_data=True,
     keywords=['django', 'heroku', 'herokuapp'],
