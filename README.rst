@@ -12,14 +12,12 @@ Django deployed on Heroku. You write a little bit of Django code and
 create a new Heroku app called ``artisanalraisinbeer`` to deploy to.
 
 While developing, you can visit your site by going to this URL:
-
-  ``http://artisanalraisinbeer.herokuapp.com``
+``http://artisanalraisinbeer.herokuapp.com``
 
 Eventually, you finish the first version of your website, buy the
 domain name `artisanalraisinbeer.com`, and set everything up
 so that you can view the site just by going to the following URL:
-
-  ``http://www.artisanalraisinbeer.com``
+``http://www.artisanalraisinbeer.com``
 
 You can still visit ``http://artisanalraisinbeer.herokuapp.com``, which
 is fine—but there's one problem: you want your main site to show
@@ -35,12 +33,12 @@ Why both? *To be double-plus sure...* :eyes:
 If ``herokuapp`` seems to be in the `originating host`_
 of the user request, then we do two things:
 
-  * Put the following in ``robots.txt``::
+* Put the following in ``robots.txt``::
 
       User-agent: *
       Disallow: /
     
-  * Set ``X-Robots-Tag`` in our response header to ``noindex, nofollow``.
+* Set ``X-Robots-Tag`` in our response header to ``noindex, nofollow``.
 
 For search engines that respect these settings, they should start to ignore these sites
 in future crawls.
