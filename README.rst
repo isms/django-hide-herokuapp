@@ -4,6 +4,9 @@ django-hide-herokuapp
 Django app for Heroku users designed to hide your ``*.herokuapp.com``
 from search engine results.
 
+.. image:: https://img.shields.io/pypi/v/django-hide-herokuapp.svg
+    :target: https://pypi.python.org/pypi/django-hide-herokuapp
+
 Use case
 --------
 
